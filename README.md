@@ -14,3 +14,4 @@
 ## 範例 - Cloud Monitor
 
 * [Cloud Monitor - Show Project Sent Bytes Count](./demo-cloudmonitor/README.md)
+* [Cloud Monitor - Stock Monitor](./demo-cloudmonitor/demo-cloudmonitor/stock-monitor.md)
