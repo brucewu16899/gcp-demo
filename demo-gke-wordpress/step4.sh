@@ -1,4 +1,4 @@
-export PRJ_ID=mitac-cp300-taipei101
+export PRJ_ID=sunny-573
 export CLUSTER_NAME=workshop
 
 gcloud --project=$PRJ_ID compute firewall-rules \

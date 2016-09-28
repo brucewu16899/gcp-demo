@@ -1,0 +1,23 @@
+{
+   "kind":"Service",
+   "apiVersion":"v1",
+   "metadata":{
+      "name":"wordpress",
+      "labels":{
+         "name":"wordpress"
+      }
+   },
+   "spec":{
+      "type": "LoadBalancer",
+      "ports": [
+        {
+          "port":8080,
+          "targetPort":80,
+          "protocol":"TCP"
+        }
+      ],
+      "selector":{
+         "name":"wordpress"
+      }
+   }
+}
