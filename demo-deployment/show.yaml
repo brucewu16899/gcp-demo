@@ -1,0 +1,2 @@
+#!/bin/bash
+gcloud deployment-manager manifests describe --deployment=my-first-deployment
