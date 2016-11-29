@@ -1,0 +1,9 @@
+{
+  "kind": "dns#resourceRecordSet",
+  "name": "iot.linkerdcos.io.",
+  "rrdatas": [
+      "1.2.3.4"
+  ],
+  "ttl": 86400,
+  "type": "A"
+}
