@@ -1,9 +1,5 @@
 #!/bin/bash
-export PROJECT=mitac-cp300-taipei101
-export DATASET=sample
-export TABLE=apache_log
-export GCS_BUCKET=gs://my-bucket-test
-export SCHEMA=IP:STRING,DNS:STRING,TS:STRING,URL:STRING
+source cfg.sh
 export FOLDER=./files
 export BACKUP=./backup
 # Test db

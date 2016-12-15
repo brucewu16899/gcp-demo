@@ -1,10 +1,5 @@
 #!/bin/bash
-export PROJECT=mitac-cp300-taipei101
-export DATASET=sample
-export TABLE=apache_log
-export FILE=sample.csv
-export GCS_BUCKET=gs://my-bucket-test
-export SCHEMA=IP:STRING,DNS:STRING,TS:STRING,URL:STRING
+source cfg.sh
 # Test db
 
 if [ `bq ls $DATASET | grep "Not found" | wc -l` = "1" ] ; then

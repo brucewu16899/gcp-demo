@@ -1,0 +1,18 @@
+[
+  {
+    "type": "STRING",
+    "name": "IP"
+  },
+  {
+    "type": "STRING",
+    "name": "DNS"
+  },
+  {
+    "type": "STRING",
+    "name": "TS"
+  },
+  {
+    "type": "STRING",
+    "name": "URL"
+  }
+]
