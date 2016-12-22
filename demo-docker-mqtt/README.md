@@ -37,3 +37,10 @@ cd mqttclient && node client.js
 presence:: Hello mqtt
 ```
 
+## 啟動emitter，持續發送訊息
+
+```
+node emitter.js
+```
+
+如果正常啟動，會每固定時間發送訊息給有接收這個訊號的client...
