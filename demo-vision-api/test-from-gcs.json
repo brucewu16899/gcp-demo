@@ -1,0 +1,18 @@
+{
+  "requests":[
+    {
+      "image":{
+        "source":{
+          "imageUri":
+            "gs://onboard2017taipei/humon001.png"
+        }
+      },
+      "features":[
+        {
+          "type":"LABEL_DETECTION",
+          "maxResults":1
+        }
+      ]
+    }
+  ]
+}
