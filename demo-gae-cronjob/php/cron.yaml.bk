@@ -1,0 +1,5 @@
+cron:
+- description: demo job
+  url: /tasks/summary
+  target: beta
+  schedule: every 1 mins 
