@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-app
+  labels:
+    app: nginx-app
+    tier: nginx-app
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  type: LoadBalancer
+  selector:
+    app: nginx-app
+    tier: nginx-app
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nginx-app
+        tier: nginx-app
+    spec:
+      containers:
+        - name: nginx-app
+          image: nginx-app
+          ports:
+          - containerPort: 80
+
