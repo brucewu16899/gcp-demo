@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: socket-server
+spec:
+  containers:
+  - name: socket-server
+    image: peihsinsu/sample-socket-server
+    ports: 
+      - containerPort: 8000
+        hostPort: 8000
+        name: socket-server

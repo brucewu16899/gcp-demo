@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ReplicationController 
+metadata: 
+  name: couchdb
+  labels:
+    name: couchdb
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: couchdb
+    spec:
+      containers:
+      - name: couchdb
+        image: couchdb
+        ports:
+          - containerPort: 5984
+            name: couchdb
+        volumeMounts:
+          - name: couchdb-storage
+            mountPath: /usr/local/var/lib/couchdb
+      volumes:
+      - name: couchdb-storage
+        gcePersistentDisk:
+          pdName: couchdb-disk
+          fsType: ext4
+

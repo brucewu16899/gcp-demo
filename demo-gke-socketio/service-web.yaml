@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app: socket-server-service
+  name: socket-server-service
+spec: 
+  ports:
+    - port: 8000 
+      name: socket-service-port
+  selector: 
+    app: socket-server
+  type: LoadBalancer
